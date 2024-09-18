@@ -1,0 +1,6 @@
+applications:
+  - name: sap-employees-details
+    path: dist/emp-frontend
+    memory: 64M
+    buildpacks:
+      - staticfile_buildpack

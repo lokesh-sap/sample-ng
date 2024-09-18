@@ -1,0 +1,72 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Set global styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #031b32;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the active nav link */
+  .navbar-nav .nav-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+  }
+  
+  /* Main container */
+  .container {
+    padding: 20px;
+    background-color: #198ce3;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Center-align the title */
+  h1.text-center {
+    margin: 20px 0;
+    color: #007bff;
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Add some spacing between footer and content when footer is fixed */
+  .container {
+    margin-bottom: 60px;
+  }
+  .customHeader {
+    height: var(--header-height) !important;
+    padding: 0 0.5rem !important; /* Adjusted padding */
+    border-bottom: solid 0.2rem var(--border-color); /* Adjusted border width */
+    box-shadow: none !important;
+    background-color: var(--background-color) !important;
+    background-image: linear-gradient(to top left, transparent 40%, var(--gradient-color) 60%);
+    line-height: 1.5 !important; /* Adjusted line-height */
+    transition: var(--transition-duration);
+    transition-property: height, padding, border-bottom, background-color, box-shadow; /* Added box-shadow */
+}
+
+/* Example CSS Variables for customization */
+:root {
+    --header-height: 60px;
+    --border-color: #007bff; /* Example color for border */
+    --background-color: #f8f9fa; /* Example color for background */
+    --gradient-color: #007bff; /* Example gradient color */
+    --transition-duration: 0.3s;
+}
+
+  
