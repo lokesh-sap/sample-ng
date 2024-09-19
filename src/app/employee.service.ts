@@ -31,4 +31,7 @@ export class EmployeeService {
   deleteEmployee(id: number): Observable<Object>{
     return this.httpClient.delete(`${this.baseURL}/${id}`);
   }
+  fetchImages(): Observable<any[]> {
+    return this.httpClient.get<any[]>(`${this.baseURL}/images`);
+  }
 }
