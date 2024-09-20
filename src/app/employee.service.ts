@@ -8,7 +8,7 @@ import { Employee } from './employee';
 })
 export class EmployeeService {
 
-  private baseURL = "http://localhost:8080/api/v1/employees";
+  private baseURL = "https://employeedetailsbackend.cfapps.us10-001.hana.ondemand.com/api/v1/employees";
 
   constructor(private httpClient: HttpClient) { }
   

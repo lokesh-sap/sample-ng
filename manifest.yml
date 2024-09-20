@@ -1,0 +1,10 @@
+---
+applications:
+  - name: sap-employees-info
+    memory: 1024MB
+    buildpacks: 
+      - staticfile_buildpack
+    disk_quota: 1024MB
+    instances: 1
+    path: dist/emp-frontend
+
