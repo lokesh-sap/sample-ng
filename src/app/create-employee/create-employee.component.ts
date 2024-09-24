@@ -11,15 +11,15 @@ import { FormsModule } from '@angular/forms';
 })
 export class CreateEmployeeComponent implements OnInit {
 
-  employee: Employee = new Employee(0, '', '', '');
-  constructor(private employeeService: EmployeeService,
-    private router: Router) { }
+  employee: Employee = new Employee('', '', '', undefined);
 
-  ngOnInit(): void {
-  }
+  
+  constructor(private employeeService: EmployeeService, private router: Router) { }
+
+  ngOnInit(): void {}
 
   saveEmployee(){
-    this.employeeService.createEmployee(this.employee).subscribe( data =>{
+    this.employeeService.createEmployee(this.employee).subscribe(data => {
       console.log(data);
       this.goToEmployeeList();
     },

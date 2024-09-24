@@ -11,7 +11,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class UpdateEmployeeComponent implements OnInit {
 
   id: number;
-  employee: Employee = new Employee(0, '', '', '');
+  employee: Employee = new Employee('', '', '', undefined);
   constructor(private employeeService: EmployeeService,
     private route: ActivatedRoute,
     private router: Router) { }
